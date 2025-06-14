@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Hogwarts School of Witchcraft and Wizardry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/Hogwarts-Crest.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/Hogwarts-Crest.png" alt="Hogwarts Crest" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="houses.html">Houses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>        <section class="admission-info">
+            <h1>Admission to Hogwarts</h1>
+            <div class="instructions">
+                <h2>Requirements for Admission</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <img src="assets/Hogwarts-Crest.png" alt="Age Requirement" class="requirement-icon">
+                        <h3>Age Requirement</h3>
+                        <p>Must be between 11-12 years of age by September 1st of the academic year</p>
+                    </div>
+                    <div class="requirement-card">
+                        <img src="assets/Hogwarts-Crest.png" alt="Magical Ability" class="requirement-icon">
+                        <h3>Magical Ability</h3>
+                        <p>Must demonstrate magical abilities or have shown signs of magical potential</p>
+                    </div>
+                    <div class="requirement-card">
+                        <img src="assets/Hogwarts-Crest.png" alt="Secrecy" class="requirement-icon">
+                        <h3>Statute of Secrecy</h3>
+                        <p>Must agree to uphold the International Statute of Wizarding Secrecy</p>
+                    </div>
+                    <div class="requirement-card">
+                        <img src="assets/Hogwarts-Crest.png" alt="Equipment" class="requirement-icon">
+                        <h3>Equipment</h3>
+                        <p>Must provide own wand, books, and required equipment (list provided upon acceptance)</p>
+                    </div>
+                </div>
+                <div class="important-notes">
+                    <h3>Important Information</h3>
+                    <ul>
+                        <li><span class="note-icon">📜</span> Acceptance letters are delivered by owl post</li>
+                        <li><span class="note-icon">🏠</span> Muggle-born students receive personal visits from Hogwarts staff</li>
+                        <li><span class="note-icon">📚</span> Full equipment list will be provided with acceptance letter</li>
+                        <li><span class="note-icon">🚂</span> Term begins on September 1st, departing from Platform 9¾</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-form">
+            <h2>Application Form</h2>
+            <div class="form-introduction">
+                <p>Please fill out all required fields carefully. Your magical signature will be recorded upon submission.</p>
+            </div>            <form class="magical-form" id="hogwartsForm">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-group">
+                        <label for="fullname">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="As it appears in magical records">
+                        <span class="field-hint">Please use your full legal name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                        <span class="field-hint">Must be 11-12 years old by September 1st</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Current Address <span class="required">*</span></label>
+                        <textarea id="address" name="address" required placeholder="Full address including country"></textarea>
+                        <span class="field-hint">Required for owl post delivery of acceptance letter</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Magical Background</h3>                    <div class="form-group">
+                        <label>Family Background <span class="required">*</span></label>
+                        <div class="background-selection">
+                            <div class="background-option">
+                                <input type="radio" id="background-pureblood" name="parentType" value="pureblood" required>
+                                <label for="background-pureblood">Pure-blood</label>
+                                <span class="background-description">Both parents are from magical families. Deep-rooted magical heritage.</span>
+                            </div>
+                            <div class="background-option">
+                                <input type="radio" id="background-halfblood" name="parentType" value="halfblood" required>
+                                <label for="background-halfblood">Half-blood</label>
+                                <span class="background-description">One parent from magical family, one from non-magical family. Blend of both worlds.</span>
+                            </div>
+                            <div class="background-option">
+                                <input type="radio" id="background-muggleborn" name="parentType" value="muggleborn" required>
+                                <label for="background-muggleborn">Muggle-born</label>
+                                <span class="background-description">Non-magical parents. Special orientation and support provided for family.</span>
+                            </div>
+                        </div>
+                        <span class="field-hint">This information helps us provide appropriate support and resources</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="magical-experience">Previous Magical Experience <span class="required">*</span></label>
+                        <textarea id="magical-experience" name="magical-experience" required
+                            placeholder="Please describe any magical incidents or abilities you have experienced...&#10;&#10;Examples:&#10;- Unexplained events&#10;- Objects moving on their own&#10;- Magical healing&#10;- Communication with magical creatures"></textarea>
+                        <span class="field-hint">Be as detailed as possible about any magical incidents</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Additional Information</h3>
+                    <div class="form-group">
+                        <label for="pet">Preferred Pet</label>
+                        <div class="pet-selection">
+                            <div class="pet-option">
+                                <input type="radio" id="pet-owl" name="pet" value="owl">
+                                <label for="pet-owl">Owl</label>
+                                <span class="pet-description">Useful for mail delivery</span>
+                            </div>
+                            <div class="pet-option">
+                                <input type="radio" id="pet-cat" name="pet" value="cat">
+                                <label for="pet-cat">Cat</label>
+                                <span class="pet-description">Excellent magical companions</span>
+                            </div>
+                            <div class="pet-option">
+                                <input type="radio" id="pet-toad" name="pet" value="toad">
+                                <label for="pet-toad">Toad</label>
+                                <span class="pet-description">Traditional magical pet</span>
+                            </div>
+                        </div>
+                        <span class="field-hint">Optional - You may bring one of these pets to Hogwarts</span>
+                    </div>
+
+                    <div class="form-group agreements">
+                        <h4>Required Agreements</h4>
+                        <div class="agreement-option">
+                            <input type="checkbox" id="secrecy" name="secrecy" required>
+                            <label for="secrecy">I solemnly swear to uphold the International Statute of Wizarding Secrecy <span class="required">*</span></label>
+                        </div>
+                        <div class="agreement-option">
+                            <input type="checkbox" id="rules" name="rules" required>
+                            <label for="rules">I agree to follow all Hogwarts rules and regulations <span class="required">*</span></label>
+                        </div>
+                        <div class="agreement-option">
+                            <input type="checkbox" id="equipment" name="equipment" required>
+                            <label for="equipment">I understand I must provide my own equipment as listed in the acceptance letter <span class="required">*</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                    <p class="submission-note">Your magical signature will be recorded upon submission</p>
+                </div>            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Hogwarts</a></li>
+                    <li><a href="houses.html">Our Houses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Important Info</h4>
+                <ul>
+                    <li><a href="#">Term Dates</a></li>
+                    <li><a href="#">Required Equipment</a></li>
+                    <li><a href="#">Student Handbook</a></li>
+                    <li><a href="#">Wizarding Career Guide</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <p class="magical-quote">"Happiness can be found even in the darkest of times if one only remembers to turn on the light."</p>
+                <div class="social-links">
+                    <a href="#" title="Wizard's Network">🌟</a>
+                    <a href="#" title="Owl Post Updates">🦉</a>
+                    <a href="#" title="Magic Mirror Chat">✨</a>
+                    <a href="#" title="Crystal Ball Notifications">🔮</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <img src="assets/Hogwarts-Crest.png" alt="Hogwarts Seal" class="magical-seal">
+            <p>&copy; 2025 Hogwarts School of Witchcraft and Wizardry</p>
+            <p>Protected by the most powerful magical enchantments</p>
+        </div>
+    </footer>
+</body>
+</html>

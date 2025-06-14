@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hogwarts School of Witchcraft and Wizardry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/Hogwarts-Crest.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/Hogwarts-Crest.png" alt="Hogwarts Crest" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="houses.html">Houses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h1>Contact Hogwarts</h1>
+            <p class="tagline">Multiple Ways to Reach the Magical World</p>
+        </section>
+
+        <section class="contact-methods">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <img src="assets/Hogwarts-Crest.png" alt="Owl Post" class="contact-icon">
+                    <h3>Owl Post</h3>
+                    <p>The traditional and most reliable method of wizard communication.</p>
+                    <div class="contact-details">
+                        <p>Address your owl to:</p>
+                        <p class="magical-address">
+                            Hogwarts School of Witchcraft and Wizardry<br>
+                            Scottish Highlands<br>
+                            Scotland<br>
+                            (Unplottable)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <img src="assets/Hogwarts-Crest.png" alt="Floo Network" class="contact-icon">
+                    <h3>Floo Network</h3>
+                    <p>For urgent matters requiring immediate attention.</p>
+                    <div class="contact-details">
+                        <p>Floo Address:</p>
+                        <p class="magical-address">
+                            "Hogwarts Headmaster's Office"<br>
+                            (Pre-approved appointments only)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <img src="assets/Hogwarts-Crest.png" alt="Patronus Message" class="contact-icon">
+                    <h3>Patronus Message</h3>
+                    <p>For emergency communications only.</p>
+                    <div class="contact-details">
+                        <p>Send to:</p>
+                        <p class="magical-address">
+                            Current Headmaster/Headmistress<br>
+                            (Advanced magic users only)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send us a Message</h2>
+            <p class="form-intro">For Muggle parents and general inquiries, please use this enchanted form.</p>
+            
+            <form class="magical-form contact-form">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="sender-name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="sender-name" name="sender-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sender-email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="sender-email" name="sender-email" required>
+                        <span class="field-hint">For Muggle parents, our enchanted system will convert emails to owl post</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry-type">Type of Inquiry <span class="required">*</span></label>
+                        <div class="inquiry-selection">
+                            <div class="inquiry-option">
+                                <input type="radio" id="admissions" name="inquiry-type" value="admissions" required>
+                                <label for="admissions">Admissions</label>
+                            </div>
+                            <div class="inquiry-option">
+                                <input type="radio" id="academic" name="inquiry-type" value="academic">
+                                <label for="academic">Academic Questions</label>
+                            </div>
+                            <div class="inquiry-option">
+                                <input type="radio" id="parent" name="inquiry-type" value="parent">
+                                <label for="parent">Parent Information</label>
+                            </div>
+                            <div class="inquiry-option">
+                                <input type="radio" id="other" name="inquiry-type" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required rows="6" 
+                            placeholder="Please be as detailed as possible with your inquiry..."></textarea>
+                    </div>
+
+                    <div class="form-group agreements">
+                        <div class="agreement-option">
+                            <input type="checkbox" id="secrecy-agreement" name="secrecy-agreement" required>
+                            <label for="secrecy-agreement">I understand that all communication with Hogwarts falls under the International Statute of Wizarding Secrecy <span class="required">*</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p class="submission-note">Your message will be delivered by the fastest available magical means</p>
+                </div>
+            </form>
+        </section>
+
+        <section class="additional-info">
+            <div class="info-card">
+                <h3>Response Times</h3>
+                <ul>
+                    <li><span class="note-icon">🦉</span> Owl Post: 3-5 business days</li>
+                    <li><span class="note-icon">🔥</span> Floo Network: Immediate (during office hours)</li>
+                    <li><span class="note-icon">✨</span> Patronus: Immediate (emergencies only)</li>
+                    <li><span class="note-icon">📨</span> Enchanted Form: 1-2 business days</li>
+                </ul>
+            </div>        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Hogwarts</a></li>
+                    <li><a href="houses.html">Our Houses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Important Info</h4>
+                <ul>
+                    <li><a href="#">Term Dates</a></li>
+                    <li><a href="#">Required Equipment</a></li>
+                    <li><a href="#">Student Handbook</a></li>
+                    <li><a href="#">Wizarding Career Guide</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <p class="magical-quote">"Happiness can be found even in the darkest of times if one only remembers to turn on the light."</p>
+                <div class="social-links">
+                    <a href="#" title="Wizard's Network">🌟</a>
+                    <a href="#" title="Owl Post Updates">🦉</a>
+                    <a href="#" title="Magic Mirror Chat">✨</a>
+                    <a href="#" title="Crystal Ball Notifications">🔮</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <img src="assets/Hogwarts-Crest.png" alt="Hogwarts Seal" class="magical-seal">
+            <p>&copy; 2025 Hogwarts School of Witchcraft and Wizardry</p>
+            <p>Protected by the most powerful magical enchantments</p>
+        </div>
+    </footer>
+</body>
+</html>
